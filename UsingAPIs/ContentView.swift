@@ -7,9 +7,15 @@
 
 import SwiftUI
 
+struct VideoViewModel {
+    let title: String
+    let viewCount: Int
+    let author: String
+}
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VideoListView(viewModel: VideoListViewModel())
             .padding()
     }
 }
